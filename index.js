@@ -26,4 +26,4 @@ do {
 }while(proceed === 0)
 
 console.log("end of the game")
-console.log(genNum)
+console.log("The correct number was "+genNum)
