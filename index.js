@@ -15,6 +15,7 @@ do {
   var genNum = generatednum.toFixed(1)
     if(number === genNum){
      console.log("You guessed correctly")
+      console.log("You have scored "+points+" points so far")
       rangelimit+=1
       points+=1
       stage+=1
@@ -26,4 +27,5 @@ do {
 }while(proceed === 0)
 
 console.log("end of the game")
+console.log("You scored "+points+" points")
 console.log("The correct number was "+genNum)
