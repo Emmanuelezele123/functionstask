@@ -1,5 +1,5 @@
-var proceed =  0
-var points = 0 
+var proceed = 0
+var points = 0
 var firstnumber = 1
 var rangelimit = 1
 var stage = 1
@@ -8,24 +8,24 @@ function getRandomNumberInRange(min, max) {
 }
 
 do {
-  console.log("Welcome to Stage "+stage)
+  console.log("Welcome to Stage " + stage)
   var number = prompt("Guess the number");
   var secondnumber = firstnumber + rangelimit;
-  var generatednum = getRandomNumberInRange(firstnumber,secondnumber)
+  var generatednum = getRandomNumberInRange(firstnumber, secondnumber)
   var genNum = generatednum.toFixed(1)
-    if(number === genNum){
-     console.log("You guessed correctly")
-      console.log("You have scored "+points+" points so far")
-      rangelimit+=1
-      points+=1
-      stage+=1
-    }else{
-      console.log("You guessed wrongly")
-       proceed = 1
-    }
-  
-}while(proceed === 0)
+  if (number === genNum) {
+    console.log("You guessed correctly")
+    console.log("You have scored " + points + " points so far")
+    rangelimit += 1
+    points += 1
+    stage += 1
+  } else {
+    console.log("You guessed wrongly")
+    proceed = 1
+  }
+
+} while (proceed === 0)
 
 console.log("end of the game")
-console.log("You scored "+points+" points")
-console.log("The correct number was "+genNum)
+console.log("You scored " + points + " points")
+console.log("The correct number was " + genNum)
