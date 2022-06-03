@@ -8,6 +8,7 @@ function getRandomNumberInRange(min, max) {
 }
 
 do {
+  console.log("Welcome to Stage "+stage)
   var number = prompt("Guess the number");
   var secondnumber = firstnumber + rangelimit;
   var generatednum = getRandomNumberInRange(firstnumber,secondnumber)
