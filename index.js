@@ -11,16 +11,18 @@ do {
   var number = prompt("Guess the number");
   var secondnumber = firstnumber + rangelimit;
   var generatednum = getRandomNumberInRange(firstnumber,secondnumber)
-    if(number === generatednum){
-     console.log("You are correct")
+  var genNum = generatednum.toFixed(1)
+    if(number === genNum){
+     console.log("You guessed correctly")
       rangelimit+=1
       points+=1
       stage+=1
     }else{
+      console.log("You guessed wrongly")
        proceed = 1
     }
   
 }while(proceed === 0)
 
 console.log("end of the game")
-console.log(generatednum)
+console.log(genNum)
